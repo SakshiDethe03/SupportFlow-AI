@@ -1,0 +1,14 @@
+[
+    {
+        "customer_id": "1001",
+        "name": "Rahul",
+        "plan": "Premium",
+        "status": "Active"
+    },
+    {
+        "customer_id": "1002",
+        "name": "Sneha",
+        "plan": "Basic",
+        "status": "Expired"
+    }
+]

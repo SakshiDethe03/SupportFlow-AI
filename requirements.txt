@@ -1,0 +1,17 @@
+langchain
+langchain-groq
+langgraph
+dotenv
+pydantic
+python-dotenv
+fastapi
+langchain-core
+uvicorn
+typing_extensions
+chromadb
+langchain-chroma
+langchain-text-splitters
+langchain-community
+sentence-transformers
+langchain-huggingface
+streamlit

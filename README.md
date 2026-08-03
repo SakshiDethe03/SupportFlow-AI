@@ -124,19 +124,17 @@ What is its status?
 
 ---
 
-## 📷 Demo
+## 📷 Live Demo
+
+https://supportflow-ai-agent.streamlit.app/
 
 ### Home Screen
 
-> Add a screenshot here
-
-### Workflow Visualization
-
-> Add a screenshot here
+> assets/SupportFlowAI-home.png
 
 ### Chat Interface
 
-> Add a screenshot here
+> assets/SupportFlowAI-ChatUI.png
 
 ---
 

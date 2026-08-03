@@ -21,3 +21,5 @@ vector_store = Chroma(
 retriever = vector_store.as_retriever(
     search_type="mmr", search_kwargs={"k": 3, "fetch_k": 10, "lambda_mult": 0.7}
 )
+
+docs = retriever.invoke("How long does a refund take?")

@@ -1,5 +1,6 @@
 import streamlit as st
 from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, AIMessage
 
 from app.graph import graph
 
@@ -100,8 +101,16 @@ if prompt := st.chat_input("Ask a customer support question..."):
     with st.chat_message("user"):
         st.markdown(prompt)
 
+    langchain_messages = []
+
+    for msg in st.session_state.messages:
+        if msg["role"] == "user":
+            langchain_messages.append(HumanMessage(content=msg["content"]))
+        else:
+            langchain_messages.append(AIMessage(content=msg["content"]))
+
     result = graph.invoke(
-        {"messages": [HumanMessage(content=prompt)]},
+        {"messages": langchain_messages},
         config=config,
     )
 

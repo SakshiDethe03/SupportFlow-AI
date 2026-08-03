@@ -1,30 +1,3 @@
-# from langgraph.graph import START, END, StateGraph
-# from langgraph.prebuilt import ToolNode, tools_condition
-# from langgraph.checkpoint.memory import MemorySaver
-
-# from app.nodes.agent import agent
-# from app.llm import tools
-# from app.state import SupportState
-
-# builder = StateGraph(SupportState)
-
-# builder.add_node("agent", agent)
-# builder.add_node("tools", ToolNode(tools))
-
-# builder.add_edge(START, "agent")
-
-# builder.add_conditional_edges(
-#     "agent",
-#     tools_condition,
-# )
-
-# builder.add_edge("tools", "agent")
-
-# memory = MemorySaver()
-
-# support_graph = builder.compile(checkpointer=memory)
-
-
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 
